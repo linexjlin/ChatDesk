@@ -6,6 +6,9 @@ A desktop APP of [https://github.com/xqdoo00o/chatgpt-web](https://github.com/xq
 
 The APP base on webview, with small installation size and resource requirements.
 
+# Requirements
+
+In windows below win 11 you may need to install [webview2 runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section)
 
 # SeceenShot
 
