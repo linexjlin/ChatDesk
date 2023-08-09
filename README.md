@@ -13,3 +13,8 @@ In windows below win 11 you may need to install [webview2 runtime](https://devel
 # SeceenShot
 
 ![](https://ipfs.ee/ipfs/QmWXLDrs94fN55iRXVwzjmK6U6mp9rVaekWEAGmYiiMtS3/6e0b366e-9301-49c8-9fb1-813957546f23.png)
+
+
+# Credit 
+
+https:/github.com/jchv/go-webview2
