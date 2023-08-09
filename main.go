@@ -3,9 +3,6 @@ package main
 import (
 	"embed"
 	"net/http"
-
-	"github.com/getlantern/systray"
-	icon "github.com/linexjlin/systray-icons/openai-logomark"
 )
 
 //go:embed web
@@ -22,25 +19,6 @@ func ServeWeb() {
 }
 
 func main() {
-	//systray.Register(onReady, nil)
 	go ServeWeb()
-	systray.Run(onReady, nil)
-}
-
-func onReady() {
-	systray.SetTemplateIcon(icon.Data, icon.Data)
-	systray.SetTitle(UText(""))
-	mWebUI := systray.AddMenuItem("Open ChatDesk", UText("Open ChatDesk"))
-	mQuit := systray.AddMenuItem(UText("Quit"), UText("Quit the whole app"))
-	go func() {
-		for {
-			select {
-			case <-mWebUI.ClickedCh:
-				showWebview("http://" + serverAddr)
-			case <-mQuit.ClickedCh:
-				systray.Quit()
-			}
-		}
-	}()
-	mWebUI.ClickedCh <- struct{}{}
+	showWebview("http://" + serverAddr)
 }
