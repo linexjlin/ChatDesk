@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/getlantern/systray v1.2.2
 	github.com/issue9/webview v0.0.0-20230614105021-1d0ab5de49e1
-	github.com/jchv/go-webview2 v0.0.0-20220126073738-2ea27096a5eb
+	github.com/jchv/go-webview2 v0.0.0-20221223143126-dc24628cff85
 	github.com/jeandeaual/go-locale v0.0.0-20220711133428-7de61946b173
 	github.com/linexjlin/systray-icons v0.0.0-20230809052725-499a8f5a1463
 	github.com/lxn/win v0.0.0-20210218163916-a377121e959e
@@ -26,7 +26,7 @@ require (
 	github.com/linexjlin/ChatDesk/webview v0.0.0-00010101000000-000000000000 // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
 	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897 // indirect
-	golang.org/x/sys v0.8.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
 )
 
 replace github.com/linexjlin/ChatDesk/webview => ./webview

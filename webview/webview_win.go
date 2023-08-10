@@ -15,13 +15,23 @@ func init() {
 }
 
 func ShowWebview(url string) {
-	w := webview2.New(true)
+	w := webview2.NewWithOptions(webview2.WebViewOptions{
+		Debug:     false,
+		AutoFocus: true,
+		WindowOptions: webview2.WindowOptions{
+			Title:  "ChatDesk Application",
+			Width:  1024,
+			Height: 768,
+			IconId: 2, // icon resource id
+			Center: true,
+		},
+	})
+
+	//w := webview2.New(true)
 	if w == nil {
 		log.Fatalln("Failed to load webview.")
 	}
 	defer w.Destroy()
-	w.SetSize(1024, 768, webview2.HintNone)
-	w.SetTitle(UText("ChatDesk"))
 	w.Navigate(url)
 	w.Run()
 }
