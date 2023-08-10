@@ -1,7 +1,7 @@
 //go:build windows
 // +build windows
 
-package main
+package webview
 
 import (
 	"log"
@@ -14,7 +14,7 @@ func init() {
 	win.ShowWindow(win.GetConsoleWindow(), win.SW_HIDE)
 }
 
-func showWebview(url string) {
+func ShowWebview(url string) {
 	w := webview2.New(true)
 	if w == nil {
 		log.Fatalln("Failed to load webview.")

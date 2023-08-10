@@ -3,6 +3,8 @@ package main
 import (
 	"embed"
 	"net/http"
+
+	"github.com/linexjlin/ChatDesk/webview"
 )
 
 //go:embed web
@@ -20,5 +22,6 @@ func ServeWeb() {
 
 func main() {
 	go ServeWeb()
-	showWebview("http://" + serverAddr)
+	webview.ShowWebview("http://" + serverAddr)
+	//ServeWeb()
 }
