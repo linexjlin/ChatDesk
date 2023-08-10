@@ -14,7 +14,7 @@ void configureAppWindow(char* title, int width, int height)
   }
 
   NSApplication *app = [NSApplication sharedApplication];
-  [app setActivationPolicy:NSApplicationActivationPolicyRegular];
+  [app setActivationPolicy:NSApplicationActivationPolicyAccessory]; // Set activation policy to accessory
   [app activateIgnoringOtherApps:YES];
 
   NSRect frame = NSMakeRect(0, 0, width, height);
@@ -25,6 +25,10 @@ void configureAppWindow(char* title, int width, int height)
                               defer:NO];
   [window setTitle:[[NSString alloc] initWithUTF8String:title]];
   [window center];
+
+  // Set collection behavior to auxiliary fullscreen window to prevent appearing in Dock
+  [window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenAuxiliary];
+  [window setCanHide:YES]; // Allow the window to be hidden
 
   NSView *contentView = [window contentView];
   webView = [[WKWebView alloc] initWithFrame:[contentView bounds]];
@@ -47,7 +51,6 @@ void configureAppWindow(char* title, int width, int height)
         multiplier:1
         constant:0]];
 
-  // Window controller:
   windowController = [[NSWindowController alloc] initWithWindow:window];
   
   free(title);
@@ -74,5 +77,17 @@ void showAppWindow(char* url)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
     doShowAppWindow(url);
+  });
+}
+
+void minimizeAppWindow()
+{
+  if (window == nil) {
+    // no app window to minimize
+    return;
+  }
+
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [window miniaturize:nil];
   });
 }
