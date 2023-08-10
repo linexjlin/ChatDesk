@@ -18,7 +18,7 @@ void configureAppWindow(char* title, int width, int height)
   [app activateIgnoringOtherApps:YES];
 
   NSRect frame = NSMakeRect(0, 0, width, height);
-  int mask = NSWindowStyleMaskTitled | NSWindowStyleMaskResizable | NSWindowStyleMaskClosable;
+  int mask = NSWindowStyleMaskTitled | NSWindowStyleMaskResizable | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable; // Add NSWindowStyleMaskMiniaturizable to enable window minimization
   window = [[NSWindow alloc] initWithContentRect:frame
                               styleMask:mask
                               backing:NSBackingStoreBuffered
@@ -27,8 +27,8 @@ void configureAppWindow(char* title, int width, int height)
   [window center];
 
   // Set collection behavior to auxiliary fullscreen window to prevent appearing in Dock
-  [window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenAuxiliary];
-  [window setCanHide:YES]; // Allow the window to be hidden
+  //[window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenAuxiliary];
+  //[window setCanHide:NO]; // Allow the window to be hidden
 
   NSView *contentView = [window contentView];
   webView = [[WKWebView alloc] initWithFrame:[contentView bounds]];
