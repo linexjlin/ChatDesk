@@ -28,7 +28,7 @@ void configureAppWindow(char* title, int width, int height)
 
   // Set collection behavior to auxiliary fullscreen window to prevent appearing in Dock
   //[window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenAuxiliary];
-  //[window setCanHide:NO]; // Allow the window to be hidden
+  //[window setCanHide:YES]; // Allow the window to be hidden
 
   NSView *contentView = [window contentView];
   webView = [[WKWebView alloc] initWithFrame:[contentView bounds]];
