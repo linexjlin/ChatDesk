@@ -93,7 +93,7 @@ void doShowAppWindow(char* url)
 void showAppWindow(char* url)
 {
   dispatch_async(dispatch_get_main_queue(), ^{
-    doShowAppWindow(url```objectc
+    doShowAppWindow(url);
   });
 }
 
