@@ -23,8 +23,9 @@ require (
 	github.com/inkeliz/gowebview v1.0.1 // indirect
 	github.com/inkeliz/w32 v1.0.2 // indirect
 	github.com/jchv/go-winloader v0.0.0-20210711035445-715c2860da7e // indirect
-	github.com/linexjlin/ChatDesk/webview v0.0.0-00010101000000-000000000000 // indirect
+	github.com/linexjlin/ChatDesk/webview v0.0.0-20230810054336-45cdd2f44c6d // indirect
 	github.com/oxtoacart/bpool v0.0.0-20190530202638-03653db5a59c // indirect
+	github.com/webview/webview v0.0.0-20230802071126-5958ba2c1ea4 // indirect
 	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 )
