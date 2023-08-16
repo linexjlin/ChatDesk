@@ -8,8 +8,6 @@ import (
 )
 
 //go:embed web
-//go:embed web/css
-//go:embed web/js
 var webStaticFS embed.FS
 var serverAddr = "127.0.0.1:28612"
 

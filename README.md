@@ -12,7 +12,9 @@ In windows below win 11 you may need to install [webview2 runtime](https://devel
 
 # SeceenShot
 
-![](https://ipfs.ee/ipfs/QmWXLDrs94fN55iRXVwzjmK6U6mp9rVaekWEAGmYiiMtS3/6e0b366e-9301-49c8-9fb1-813957546f23.png)
+![windows](https://ipfs.ee/ipfs/QmZ5tDKu32uLp1bdwHTuNY8Lc96kmzDHNRDZnM8fpfCKeh/fb366dbd-f4a6-4477-9941-57d4f351635f.png)
+
+![](https://ipfs.ee/ipfs/QmdLHA3mNEWdd4sy5EycDpBsXPCjZ9dVeGGyXQrJudEanT/c57aecf3-06da-4f25-aaca-9e89ac399b59.png)
 
 
 # Credit 
