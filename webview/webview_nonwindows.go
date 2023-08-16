@@ -30,7 +30,7 @@ var URL = ""
 var W = 1024
 var H = 768
 
-func ShowWebview(url string) {
+func ShowWebview2(url string) {
 	URL = url
 	systray.Register(onReady, nil)
 	configureWebview("ChatDesk", 1024, 768)

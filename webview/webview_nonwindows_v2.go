@@ -5,7 +5,7 @@ package webview
 
 import "github.com/webview/webview"
 
-func ShowWebview2(url string) {
+func ShowWebview(url string) {
 	w := webview.New(false)
 	defer w.Destroy()
 	w.SetTitle("ChatDesk Application")
