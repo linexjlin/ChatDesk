@@ -21,7 +21,7 @@ In windows below win 11 you may need to install [webview2 runtime](https://devel
 
 ## ChatGPT-Next-Web
 
-![](https://ipfs.ee/ipfs/QmRAmf2gKzWvSdPBW9WNaqgikAegHnwHXEBCvb7wRggihd/a72b569c-b9f2-45a5-8ae4-927bac078948.png)
+![](https://ipfs.ee/ipfs/QmTxm2c373QvnwXR5oAAXVnw1rHFrzospepBJ1LyUTmxuy/5209963c-8bb8-4edf-93d2-31f6a39a6dc7.png)
 
 ![](https://ipfs.ee/ipfs/QmRGbAUxpub2reXWD5K9MpLADothwPsSi6qLLQM4ZPcUHr/9fd084f1-2209-464f-97ef-ef0d415ff541.png)
 
