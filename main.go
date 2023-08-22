@@ -7,14 +7,14 @@ import (
 	"github.com/linexjlin/ChatDesk/webview"
 )
 
-//go:embed all:out
+//go:embed all:ChatGPT-Next-Web/out
 var webStaticFS embed.FS
-var serverAddr = "127.0.0.1:28612"
+var serverAddr = "127.0.0.1:38612"
 
 func ServeWeb() {
 	fileServer := http.FileServer(http.FS(webStaticFS))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		r.URL.Path = "/out" + r.URL.Path
+		r.URL.Path = "/ChatGPT-Next-Web/out" + r.URL.Path
 		fileServer.ServeHTTP(w, r)
 	})
 	http.ListenAndServe(serverAddr, nil)
