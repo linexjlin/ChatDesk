@@ -1,3 +1,6 @@
 [submodule "web"]
 	path = web
-	url = git@github.com:linexjlin/chatgpt-web.git
+	url = https://github.com/linexjlin/chatgpt-web.git
+[submodule "ChatGPT-Next-Web"]
+	path = ChatGPT-Next-Web
+	url = https://github.com/linexjlin/ChatGPT-Next-Web.git
